@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les métadonnées EXIF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+    <h1>La photographie numérique</h1>
+    <nav>
+    <a href="index.html"> Accueil </a>
+	<a href="historique.html"> Historique </a>
+    <a href="capteurs.html"> Capteurs </a>
+	<a href="traitements.html"> Traitement </a>
+	<a href="meta.html" class="actif"> Metadonnées </a>
+	<a href="pixels.html"> Pixels </a>
+    </nav>
+</header>
+
+<main>
+<h2>Les metadonnées EXIF</h2>
+    <p>Les métadonnées EXIF (Exchangeable Image File Format) sont des informations intégrées automatiquement dans un fichier image au moment de sa création, généralement par un appareil photo ou un smartphone. Elles contiennent divers détails techniques et contextuels, comme la date et l’heure de la prise de vue, le modèle de l’appareil utilisé, les réglages (ISO, ouverture, vitesse d’obturation), ainsi que parfois la localisation GPS. Ces données sont utiles pour organiser, analyser ou authentifier une photo, mais elles peuvent aussi poser des risques pour la vie privée si elles révèlent des informations sensibles comme l’emplacement exact où l’image a été prise.</p>
+<h2>Informations contenues dans les métadonnées EXIF</h2>
+    <ol>
+    <li>Date et heure de la prise de vue</li>
+    <li>Coordonnées GPS (latitude, longitude, altitude)</li>
+    <li>Marque et modèle de l’appareil</li>
+    <li>Numéro de série de l’appareil (parfois)</li>
+    <li>Paramètres de prise de vue :
+        <ol>
+        <li>Ouverture (f/)</li>
+        <li>Vitesse d’obturation</li>
+        <li>Sensibilité ISO</li>
+        <li>Distance focale</li>
+        <li>Mode de prise de vue</li>
+        </ol>
+    </li>
+    <li>Informations sur le flash (activé/désactivé)</li>
+    <li>Balance des blancs</li>
+    <li>Résolution et dimensions de l’image</li>
+    <li>Format et type de fichier</li>
+    <li>Orientation de l’image</li>
+    <li>Logiciel utilisé pour créer ou modifier l’image</li>
+    <li>Auteur ou copyright (si renseigné)</li>
+    </ol>
+    <a href="https://fr.wikipedia.org/wiki/Exchangeable_image_file_format" target="_blank">
+    <img src="exif.jpg" id="image5" alt="Exemple de metadonnées EXIF">
+    </a>
+	<figcaption>Cliquez pour en savoir plus sur les metadonnées EXIF</figcaption>
+<h2>Comment lire les metadonnées EXIF ?</h2>
+    <p>Il existe plusieurs méthodes pour lire les métadonnées EXIF d’une image :</p>
+    <h3>Sur ordinateur</h3>
+        <ul>
+        <li><strong>Windows :</strong> clic droit sur l’image → Propriétés → Détails</li>
+        <li><strong>Mac :</strong> clic droit → Lire les informations → section EXIF</li>
+        </ul>
+    <h3>Sur smartphone</h3>
+        <ul>
+        <li><strong>Android :</strong> ouvrir l’image → Détails</li>
+        <li><strong>iPhone :</strong> ouvrir l’image → glisser vers le haut ou icône ℹ️</li>
+        </ul>
+    <h3>En ligne</h3>
+        <p>Utilise un site web pour téléverser l’image et afficher ses métadonnées.</p>
+    <h3>Avec des logiciels</h3>
+        <ul>
+        <li>Logiciels de photo (Lightroom, etc.)</li>
+        <li>Outils spécialisés comme ExifTool</li>
+        </ul>
+<h2>Metadonnées EXIF d'une photo numérique</h2>
+    <table>
+        <caption>Résumé des catégories et champs EXIF</caption>
+        <tr>
+            <th>Catégorie EXIF</th>
+            <th>Champ typique</th>
+            <th>Description / Explication</th>
+            <th>Impact ou Utilité</th>
+        </tr>
+        <tr>
+            <td>Appareil</td>
+            <td>Make, Model</td>
+            <td>Marque et modèle de l’appareil</td>
+            <td>Savoir quel appareil a pris la photo</td>
+        </tr>
+        <tr>
+            <td>Capture / Photo</td>
+            <td>FNumber, ShutterSpeed, ISO, FocalLength</td>
+            <td>Réglages de l’exposition et de l’objectif</td>
+            <td>Comprendre la qualité et l’aspect artistique</td>
+        </tr>
+        <tr>
+            <td>Logiciel / Retouche</td>
+            <td>Software, Processing</td>
+            <td>Logiciel utilisé pour éditer la photo</td>
+            <td>Suivi des retouches ou historique de l’image</td>
+        </tr>
+        <tr>
+            <td>Date / Temps</td>
+            <td>DateTimeOriginal, DateTimeDigitized</td>
+            <td>Quand la photo a été prise ou modifiée</td>
+            <td>Organisation chronologique des photos</td>
+        </tr>
+        <tr>
+            <td>Orientation</td>
+            <td>Orientation</td>
+            <td>Position de l’image (portrait / paysage)</td>
+            <td>Affichage correct sur les appareils</td>
+        </tr>
+        <tr>
+            <td>Localisation</td>
+            <td>GPS Latitude, GPS Longitude</td>
+            <td>Coordonnées GPS si activé</td>
+            <td>Localiser la photo sur une carte</td>
+        </tr>
+        <tr>
+            <td>Sécurité / Confidentialité</td>
+            <td>ExifVersion, MakerNote</td>
+            <td>Informations techniques et notes constructeurs</td>
+            <td>Peut révéler des informations sensibles</td>
+        </tr>
+    </table>
+<div class="saviez-vous">
+<strong> Le saviez-vous ?</strong>
+<p>
+Les EXIF peuvent révéler des informations très précises, comme la vitesse exacte de l’obturateur ou le type de carte mémoire utilisée. Des enquêteurs ont même réussi à retrouver l’auteur d’une photo simplement grâce aux données EXIF cachées dans l’image !
+</p>
+</div>
+<h2>Vidéo explicative</h2>
+<p>Voici ci-dessous une vidéo nous renseignant sur les metadonnées EXIF</p>
+<video src="exifsmeta.mp4" controls width="300">
+</video>
+</main>
+
+<footer>
+    <h2 id="source">Source</h2>
+	<p>Source : <a href="https://pixees.fr/informatiquelycee/n_site/snt_photo.html" target="_blank">pixees.fr</a></p>
+</footer>
+</body>
+</html>
